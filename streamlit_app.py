@@ -18,6 +18,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
+# dataframe ref: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html 
 # streamlit.dataframe(my_fruit_list) -- Static, dynamic below
 streamlit.dataframe(fruits_to_show)
 
