@@ -21,6 +21,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # dataframe ref: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html 
 # streamlit.dataframe(my_fruit_list) -- Static, dynamic below
 streamlit.dataframe(fruits_to_show)
+# New section to display Fruityvice api resonse
+streamlit.header("Fruityvice Fruit Advice!"
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
