@@ -46,8 +46,11 @@ except URLError as e:
 # streamlit.text(fruityvice_response.json()) # updated with code below in tablel format vs json format
 
 # troubleshooting
-streamlit.stop()
+# streamlit.stop()
 
+# Add a button to load the fruit
+# if streamlit.button('Get Fruit List'):
+  
 # import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
